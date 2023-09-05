@@ -1,4 +1,4 @@
-print('hello world')
+#print('hello world')
 
 #list- indexed array that dont need
 list1 = [1, 2, 3, 4, 'A', "@"]
@@ -14,5 +14,12 @@ def list_of_numbers(some_list: list):
 def combine_sum(some_list1: list, some_list2: list):
     return list_of_numbers(some_list1) + list_of_numbers(some_list2)
 
+#print(combine_sum(some_list1=list2, some_list2=list2))
 
-print(combine_sum(some_list1=list2, some_list2=list2))
+def return_powered(somelist: list) -> list:
+    for i, data in enumerate(somelist):
+        somelist[i] = data**2
+    
+    return somelist
+
+print(return_powered(somelist=list2))
